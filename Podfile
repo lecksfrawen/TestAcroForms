@@ -5,7 +5,6 @@ platform :ios, '10.0'
 
 target myProjectName do
 	use_frameworks!
-	pod 'ILPDFKit'
 end
 
 post_install do |installer|
