@@ -14,9 +14,9 @@ struct CodablePDFForms: Codable {
     var forms: [CodablePDFForm]
 }
 
-struct CodablePDFForm: Codable {
+struct CodablePDFForm: Codable, Hashable {
     var name: String
     var value: String
-    var uname: String
-    var form_type: String
+    var controlType: String
+    var fieldType: String
 }

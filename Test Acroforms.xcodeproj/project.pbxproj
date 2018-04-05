@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75083D6120756AE000C79808 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75083D5F20756AE000C79808 /* ChildViewController.swift */; };
 		75083D6220756AE000C79808 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75083D6020756AE000C79808 /* ParentViewController.swift */; };
 		751756A8207561B400AB9B99 /* GlobalErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751756A7207561B400AB9B99 /* GlobalErrors.swift */; };
 		751756AA207561D300AB9B99 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751756A9207561D300AB9B99 /* Extensions.swift */; };
 		751756AC2075696900AB9B99 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751756AB2075696900AB9B99 /* Structs.swift */; };
+		752B8B052075925000279EA9 /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752B8B042075925000279EA9 /* PDFKit.framework */; };
 		75EEB241207547DA009D7626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EEB240207547DA009D7626 /* AppDelegate.swift */; };
 		75EEB246207547DA009D7626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EEB244207547DA009D7626 /* Main.storyboard */; };
 		75EEB248207547DD009D7626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EEB247207547DD009D7626 /* Assets.xcassets */; };
@@ -23,11 +23,11 @@
 		0C4F3A4EF1D73E2BAB3C8A3F /* Pods_Test_Acroforms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Acroforms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A7DD20DEAAEE5ADB043570 /* Pods-Test Acroforms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Acroforms.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test Acroforms/Pods-Test Acroforms.debug.xcconfig"; sourceTree = "<group>"; };
 		684DEEEEDAC6926CFBDFD5CE /* Pods-Test Acroforms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Acroforms.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test Acroforms/Pods-Test Acroforms.release.xcconfig"; sourceTree = "<group>"; };
-		75083D5F20756AE000C79808 /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 		75083D6020756AE000C79808 /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		751756A7207561B400AB9B99 /* GlobalErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalErrors.swift; sourceTree = "<group>"; };
 		751756A9207561D300AB9B99 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		751756AB2075696900AB9B99 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		752B8B042075925000279EA9 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
 		75EEB23D207547DA009D7626 /* Test Acroforms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Acroforms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75EEB240207547DA009D7626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75EEB245207547DA009D7626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				752B8B052075925000279EA9 /* PDFKit.framework in Frameworks */,
 				EA0079C35A69FA82C3A07862 /* Pods_Test_Acroforms.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +52,7 @@
 		46ADC109E77AA121681663F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				752B8B042075925000279EA9 /* PDFKit.framework */,
 				0C4F3A4EF1D73E2BAB3C8A3F /* Pods_Test_Acroforms.framework */,
 			);
 			name = Frameworks;
@@ -78,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				75083D6020756AE000C79808 /* ParentViewController.swift */,
-				75083D5F20756AE000C79808 /* ChildViewController.swift */,
 				75EEB240207547DA009D7626 /* AppDelegate.swift */,
 				75EEB244207547DA009D7626 /* Main.storyboard */,
 				75EEB247207547DD009D7626 /* Assets.xcassets */,
@@ -228,7 +229,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75083D6120756AE000C79808 /* ChildViewController.swift in Sources */,
 				751756AC2075696900AB9B99 /* Structs.swift in Sources */,
 				751756AA207561D300AB9B99 /* Extensions.swift in Sources */,
 				75EEB241207547DA009D7626 /* AppDelegate.swift in Sources */,
@@ -381,7 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SZP43QR59Q;
 				INFOPLIST_FILE = "Test Acroforms/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,7 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SZP43QR59Q;
 				INFOPLIST_FILE = "Test Acroforms/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
