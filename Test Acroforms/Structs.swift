@@ -14,9 +14,24 @@ struct CodablePDFForms: Codable {
     var forms: [CodablePDFForm]
 }
 
-struct CodablePDFForm: Codable, Hashable {
+struct CodablePDFForm: Codable {
     var name: String
     var value: String
     var controlType: String
     var fieldType: String
+}
+
+extension CodablePDFForm: Equatable {
+    static func == (lhs: CodablePDFForm, rhs: CodablePDFForm) -> Bool {
+        return lhs.name == rhs.name &&
+            lhs.value == rhs.value &&
+            lhs.controlType == rhs.controlType &&
+            lhs.fieldType == rhs.fieldType
+    }
+}
+
+extension CodablePDFForm: Hashable {
+    var hashValue: Int {
+        return name.hashValue ^ value.hashValue ^ controlType.hashValue ^ fieldType.hashValue
+    }
 }
